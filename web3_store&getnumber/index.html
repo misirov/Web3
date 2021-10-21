@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.js"></script>
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <h2>Smart Contract test</h2>
+        <h5>Stores a number in a smart contract and retrieves it from the local blockchain </h5>
+        
+        <input id="input-number" type="text">
+
+        <div class="button-container">
+
+            <button id='btn-setNumber' type="submit" onclick="set_number()" > Store number</button>
+            <button id='btn-getNumber' type="submit" onclick="get_number()" > Retrieve number</button>
+
+            <p id="p-receipt" ></p>
+            <p id="p-number"></p>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

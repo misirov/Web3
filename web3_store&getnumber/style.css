@@ -1,0 +1,47 @@
+* {
+  background-color: rgb(237, 241, 243);
+}
+
+button {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+}
+
+.container {
+  max-width: 600px;
+  max-height: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#input-number {
+  margin: 10px;
+}
+
+.button-container {
+  padding: 5px;
+  margin: 5px;
+}
+
+#btn-setNumber:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+#btn-getNumber:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+#p-receipt {
+  margin: 5px;
+  margin-top: 12px;
+  padding: 5px;
+}
+#p-number {
+  margin: 5px;
+  margin-top: 12px;
+  padding: 5px;
+}
