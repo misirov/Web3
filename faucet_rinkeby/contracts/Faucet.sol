@@ -46,5 +46,9 @@ contract Faucet {
     function selfDestruct() external onlyOwner {
         selfdestruct(payable(owner));
     }
+    
+    // fallback function
+    function () public payable {}
+
 
 }
