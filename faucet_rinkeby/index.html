@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.js"></script>
+    <script src="./main.js" ></script>
+    <title> Ethereum Rinkeby Faucet</title>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <p id="thanks" class="modal-thanks"></p>
+        <p id="error" class="modal-error"></p>
+
+        <div class="title">
+            <h1>Rinkeby Faucet</h1>
+            <p>Donate or get test ether!</p>
+        </div>
+
+        <div class="getEther">
+            <h3>Get 0.1 Ether!</h3>
+            <input type="text" placeholder="Enter wallet address" id="input-address" required>
+            <br>
+            <button id="btn-getEther" onclick="getFakeEther()">Get Test Ether</button>
+        </div>
+        <br>
+        <div class="donateEther">
+            <h4>Donate Ether!</h4>
+            <input type="number" placeholder="Enter quantity" id="input-donate" required>
+            <button id="btn-donate" onclick="donateEther()" >Donate</button>
+        </div>
+        <br>
+        <div class="footer">
+            <h4>Contract Balance</h4>
+            <p id="contract-balance" ></p>
+            <h4>Contract Address <a href="https://rinkeby.etherscan.io/address/0x5a302357CA03AE47A924155004269cffDC07C2AA#code" >See here!</a></h4>
+            <p id="contract-address" ></p>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <p>If you have test ether laying around without any use please consider 
+            donating it to support learning. A 1 day cool off has been set to avoid malicious users draining the contract's balance.</p>
+    </div>
+
+</body>
+</html>
